@@ -1,15 +1,9 @@
 'use client';
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { HiDownload } from "react-icons/hi";
-import { FaEye } from "react-icons/fa";
-import Lottie from "react-lottie";
+import { FaXTwitter, FaEye } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBG";
 import { GlobeDemo } from "./GridGlobe";
-import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { logo } from "@/data";
 
@@ -24,7 +18,7 @@ export const BentoGrid = ({
     <div
       className={cn(
         // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-rows-8 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -56,23 +50,6 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
-  const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
-
   const socialIcons = {
     1: <FaLinkedin className="w-5 h-5" />,
     2: <FaGithub className="w-5 h-5" />,
@@ -80,7 +57,6 @@ export const BentoGridItem = ({
   };
 
   const handleResumeView = () => {
-    
     window.open('https://drive.google.com/file/d/1KrPe_418L24jJuizjvDEq6QMyB3cMKWK/view?usp=sharing', '_blank');
   };
 

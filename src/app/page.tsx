@@ -1,6 +1,3 @@
-import { Spotlight } from "@/components/ui/Spotlight";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import { FloatingNav } from "@/components/ui/FLoatingNav";
