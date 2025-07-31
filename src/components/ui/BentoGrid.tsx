@@ -48,7 +48,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const rightLists = ["MongoDB", "NextJS", "TailwindCSS"];
 
   const socialIcons = {
     1: <FaLinkedin className="w-5 h-5" />,
