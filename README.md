@@ -43,7 +43,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - **3D Graphics:** Three.js, @react-three/fiber, @react-three/drei
 - **Animations:** Framer Motion, Lottie React
 - **Icons:** React Icons
-- **UI Components:** Custom components with Radix UI
+- **UI Components:** Custom components with Aceternity UI
 
 ## Deployment
 
