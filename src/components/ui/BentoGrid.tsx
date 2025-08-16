@@ -53,7 +53,15 @@ export const BentoGridItem = ({
   const socialIcons = {
     1: <FaLinkedin className="w-5 h-5" />,
     2: <FaGithub className="w-5 h-5" />,
-    3: <FaXTwitter className="w-5 h-5" />
+    3: <FaXTwitter className="w-5 h-5" />,
+    4: (
+      <img
+        src="/kaggle.svg"
+        alt="Kaggle"
+        className="w-5 h-5"
+        style={{ display: 'block' }}
+      />
+    )
   };
 
   const handleResumeView = () => {
@@ -175,7 +183,7 @@ export const BentoGridItem = ({
             <div className="mt-5 relative">
               {/* Social Media Icons */}
               <div className="flex justify-center gap-4">
-                {logo.slice(0, 3).map((social) => (
+                {logo.map((social) => (
                   <a
                     key={social.id}
                     href={social.url}
@@ -190,7 +198,14 @@ export const BentoGridItem = ({
                     `}
                     aria-label={social.name}
                   >
-                    {socialIcons[social.id as keyof typeof socialIcons]}
+                    {socialIcons[social.id as keyof typeof socialIcons] || (
+                      <img
+                        src={social.logo}
+                        alt={social.name}
+                        className={social.customSize || "w-5 h-5"}
+                        style={{ display: 'block' }}
+                      />
+                    )}
                   </a>
                 ))}
               </div>

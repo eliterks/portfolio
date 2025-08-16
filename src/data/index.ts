@@ -167,6 +167,16 @@ export const logo = [
   bgColor: "bg-black",
   hoverBgColor: "hover:bg-gray-800",
   customSize: "w-5 h-5" // Add custom size property
+},
+{
+  id: 4,
+  name: "Kaggle",
+  alt: "Kaggle Logo",
+  logo: "/kaggle.svg",
+  url: "https://www.kaggle.com/rksrank1",
+  bgColor: "bg-cyan-5100",
+  hoverBgColor: "hover:bg-white-400",
+  customSize: "w-5 h-5"
 }
 ];
 export const workExperience = [
