@@ -65,7 +65,7 @@ export const BentoGridItem = ({
   };
 
   const handleResumeView = () => {
-    window.open('https://drive.google.com/file/d/1Z8IdB4lTFBcepMehG4qsDn2Vh7yYr2Zl/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1hgWjBQbradtsk2klvC78XnpJiM3AbcCm/view?usp=sharing', '_blank');
   };
 
   return (
